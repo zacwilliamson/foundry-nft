@@ -6,7 +6,7 @@ import {BasicNft} from "../src/BasicNft.sol";
 
 // import {HelperConfig} from "./HelperConfig.s.sol";
 
-contract DeployRaffle is Script {
+contract DeployBasicNft is Script {
     function run() external returns (BasicNft) {
         vm.startBroadcast();
         BasicNft basicNft = new BasicNft();
